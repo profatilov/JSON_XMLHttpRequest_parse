@@ -1,3 +1,4 @@
+let jsonUrl = 'https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json';
 let httpRequest = obj => {
     return new Promise((resolve, reject) => {
         let xhr = new XMLHttpRequest();
@@ -16,7 +17,7 @@ let httpRequest = obj => {
     });
 };
 
-httpRequest({url: 'https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json'}).then(data => {
+httpRequest({url: jsonUrl}).then(data => {
     let countries = JSON.parse(data);
     let countrySelect = document.querySelector('#country');
     let citySelect = document.querySelector('#city');
