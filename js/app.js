@@ -18,10 +18,10 @@ let httpRequest = obj => {
 
 httpRequest({url: 'https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json'}).then(data => {
     let countries = JSON.parse(data);
-    let htmlCountryOptions = '<option value="0">Country not selected</option>';
     let countrySelect = document.querySelector('#country');
     let citySelect = document.querySelector('#city');
     let resultH3 = document.querySelector('.result');
+    let htmlCountryOptions = '<option value="0">Country not selected</option>';
 
     countries = sortObj(countries);
 
