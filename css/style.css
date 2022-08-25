@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: #000;
+    color: white;
+}
+
+.country-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+ul li {
+    color: grey;
+}
+
+select {
+    width: 300px;
+    padding: 12px;
+    background-color: lightblue;
+    margin: 40px 40px 40px 0;
+}
+
+select::-ms-expand {
+    display: none;
+}

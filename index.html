@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11_async_js_http_req</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="country-wrapper">
+    <ul>
+        <li>https://raw.githubusercontent.com/David-Haim/CountriesToCitiesJSON/master/countriesToCities.json</li>
+        <li>JSON. Загрузить используя XMLHttpRequest и распарсить как ассоциативный массив.</li>
+        <li>Организовать выбор страны и города, используя два select и ассоциативный массив из примера выше.</li>
+        <li>При выборе страны в списке городов должны быть только города из выбранной страны.</li>
+    </ul>
+
+    <label for="country">Country</label>
+    <select name="country" id="country">
+        <option value="0">Country not selected</option>
+    </select>
+
+    <label for="city">City</label>
+    <select name="city" id="city" disabled>
+        <option value="0">City not selected</option>
+    </select>
+
+    <h3 class="result"></h3>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
